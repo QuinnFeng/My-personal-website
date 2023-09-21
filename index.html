@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/themes.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/pages.css" />
+    <title>Folio</title>
+  </head>
+  <body>
+    <!--Page Theme-->
+    <div class="theme-panel">
+      <div class="theme-body">
+        <span>Change Theme</span>
+        <div class="btn-group">
+          <button data-toggle="light" class="switcher-btn active">Light</button>
+          <button data-toggle="dark" class="switcher-btn">Dark</button>
+        </div>
+        <button class="theme-tab">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+    <!--Main Site Wrapper-->
+    <main class="site-wrapper">
+      <header class="site-header">
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="./index.html "><h2>folio.</h2></a>
+          </div>
+          <div class="navbar-nav">
+            <ul class="ul-defaults-none main-menu">
+              <li class="nav-item">Home</li>
+              <li class="nav-item" data-open="about">About me</li>
+              <li class="nav-item" data-open="contact">Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <!--Hero Section-->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="hero-content">
+            <div class="code-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h2 class="header-lg">Code. Eat. Sleep.</h2>
+            <div class="sub-header">
+              I create meaningful solutions for your brands and products.
+              <br />
+              Give your customers the best experience possible.
+            </div>
+            <div class="btn btn-primary round-pill">
+              <a href="#" data-open="contact">Let's talk now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Portfolio section-->
+      <section class="portfolio-section">
+        <div class="container search-container">
+          <label for="search">
+            <input
+              autocomplete="off"
+              id="search"
+              type="text"
+              class="search-input"
+              placeholder="Search..."
+            />
+            <i class="fas fa-search"></i>
+          </label>
+          <ul class="portfolio-filter-nav ul-defaults-none">
+            <li data-filter="all" class="filter-link active">All Work</li>
+            <li data-filter="web" class="filter-link">Web Development</li>
+            <li data-filter="app" class="filter-link">App Development</li>
+            <li data-filter="ui" class="filter-link">UI Design</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-item="ui" data-open="ui-1">
+            <div class="card-body">
+              <img src="./assests/images/Front-App.webp" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>UI Development</div>
+                <h3>Front</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="app" data-open="app-1">
+            <div class="card-body">
+              <img src="./assests/images/foods.webp" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>App Development</div>
+                <h3>My Food Collections</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="app" data-open="app-2">
+            <div class="card-body">
+              <img src="./assests/images/r.jpg" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>App Development</div>
+                <h3>Restaurant Website</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="ui" data-open="ui-2">
+            <div class="card-body">
+              <img src="./assests/images/m.jpg" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>UI Development</div>
+                <h3>Minimallista</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="ui" data-open="ui-3">
+            <div class="card-body">
+              <img src="./assests/images/resume.jpg" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>UI Development</div>
+                <h3>My Resumé</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-1">
+            <div class="card-body">
+              <img src="./assests/images/skate.jpg" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Skateboard</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="web" data-open="web-2">
+            <div class="card-body">
+              <img src="./assests/images/fullmetal.jpg" alt="portfolio-icon" />
+              <div class="card-popup-box">
+                <div>Web Development</div>
+                <h3>Fullmetal Alchemist</h3>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-item="app" data-open="app-3">
+            <div class="card-body">
+              <img
+                src="./assests/images/traffic-lights.jpg"
+                alt="portfolio-icon"
+              />
+              <div class="card-popup-box">
+                <div>App Development</div>
+                <h3>Traffic Light</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Carousel for reviews-->
+
+      <section class="reviews">
+        <div class="review-title">What People Say</div>
+        <h2 class="header-md">Trusted by Clients</h2>
+        <div class="review-preview">
+          <img src="./assests/images/cube.png" alt="cube" />
+        </div>
+
+        <div class="review-carousel">
+          <div class="review-item">
+            <div class="review-text">
+              I've had the pleasure of collaborating with Ken on multiple
+              projects.His technical expertise and dedication to delivering
+              high-quality solutions make them a valuable asset to any team.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assests/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Daniel Ryland</div>
+                <div class="company">Mercury System Inc.</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              Ken consistently demonstrates a strong understanding of software
+              development principles. His ability to tackle complex challenges
+              with creativity and precision is truly impressive.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assests/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Alex Trandle</div>
+                <div class="company">Bite Squad</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              I've seen Zhiheng excel in various coding languages and adapt
+              seamlessly to evolving tech stacks. Their commitment to continuous
+              learning and problem-solving is commendable.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assests/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Ava Lane</div>
+                <div class="company">ITC management group</div>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-text">
+              Ken is not only a skilled developer but also a great team player.
+              Their clear communication and collaborative approach significantly
+              contribute to project success.
+            </div>
+            <div class="review-author">
+              <div class="avatar">
+                <img src="./assests/images/ava-1.jpg" alt="avatar" />
+              </div>
+              <div class="details">
+                <div class="name">Jonathan Higgers</div>
+                <div class="company">Devslopes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-ctrl-container">
+          <button>
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!--Modals-->
+      <!--About Page Modal-->
+      <div
+        id="about"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>About Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/Photo-7.jpeg" alt="head shot" />
+            </div>
+            <div class="about-text">
+              <h2 class="header-md">Zhiheng Ken Feng</h2>
+              <p>
+                <span><i class="fa-regular fa-envelope"></i></span>
+                <a href="mailto:quinnfeng26276@gmail.com"
+                  >quinnfeng26276@gmail.com</a
+                >
+              </p>
+              <p>
+                <span><i class="fa-solid fa-phone"></i></span> (662) 874 2525
+              </p>
+            </div>
+          </div>
+          <div class="marquee">
+            <ul class="marquee-content">
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-codepen"></i></li>
+              <li><i class="fab fa-dev"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fa-brands fa-html5"></i></li>
+              <li><i class="fab fa-node"></i></li>
+              <li><i class="fab fa-aws"></i></li>
+              <li><i class="fa-brands fa-java"></i></li>
+              <li><i class="fa-brands fa-square-js"></i></li>
+              <li><i class="fa-brands fa-css3-alt"></i></li>
+              <li><i class="fa-solid fa-database"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Contact Page Modal-->
+      <div
+        id="contact"
+        class="full-site-modal page-block"
+        data-animation="zoomInOut"
+      >
+        <div class="container-fluid">
+          <header class="modal-header">
+            <h3>Contact Page</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="contact-text">
+              <h2 class="header-md">Ken Feng</h2>
+              <div>Have a project or question? Send me a message!</div>
+              <div>I will reply in 48 hours.</div>
+            </div>
+            <form class="folio-form">
+              <input
+                class="form-control"
+                type="name"
+                name="Name"
+                placeholder="Name"
+              />
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+              <input
+                class="form-control"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              />
+              <textarea
+                class="form-control"
+                name="message"
+                cols="30"
+                rows="3"
+                placeholder="Write your message..."
+              ></textarea>
+              <input
+                class="btn btn-primary round-pill"
+                type="submit"
+                value="Send"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--PopUp Modals-->
+      <div id="ui-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>UI Project 1</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img
+                src="./assests/images/Front-App.webp"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a
+                  href="https://saas-project-umber-xi.vercel.app"
+                  target="_blank"
+                  ><strong>Front</strong>
+                </a>
+              </p>
+              <p>My finest responsive webpage portfolio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="app-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>App Project 1</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/foods.webp" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a href="https://my-food-collection.vercel.app/" target="_blank"
+                  ><strong>My food Collection</strong></a
+                >
+              </p>
+              <p>
+                save your favorites from a collection of foods from external API
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="app-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>App Project 2</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/r.jpg" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a
+                  href="https://web-module-5-coding-assignment.vercel.app/"
+                  target="_blank"
+                  ><strong>Coursera html-css-js capstone</strong></a
+                >
+              </p>
+              <p>
+                Chinese restaurant responive website using html, css,
+                JavaScript, jQuery and boostrap
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ui-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>UI Project 2</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/m.jpg" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a
+                  href="https://responsive-website-mockup.vercel.app/"
+                  target="_blank"
+                  ><strong>Minimallista</strong></a
+                >
+              </p>
+              <p>Responive web site using HTML & CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ui-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>UI project 3</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/resume.jpg" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a href="https://zf-web-resume.vercel.app/" target="_blank"
+                  ><strong>My Resumé</strong></a
+                >
+              </p>
+
+              <p>Personalize Resumé using simple HTML & CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="web-1" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>Web Project 1</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/skate.jpg" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a
+                  href="https://skate-radness-start-quinnfeng26276-gmailcom.vercel.app/"
+                  target="_blank"
+                  ><strong>Skateboard</strong></a
+                >
+              </p>
+              <p>
+                Responsive webpage for scenes and merchandises of skateboarding
+                using html & css
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="web-2" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>Web Project 2</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img src="./assests/images/fullmetal.jpg" alt="portfolio image" />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a
+                  href="https://html-to-react-green.vercel.app/"
+                  target="_blank"
+                  ><strong>Fullmetal Alchemist</strong></a
+                >
+              </p>
+              <p>
+                My first react app to show some characters from Fullmetal
+                Alchemist
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="app-3" class="modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <h3>App Project 3</h3>
+            <i class="fas fa-times" data-close></i>
+          </header>
+          <div class="modal-body">
+            <div class="img-wrapper">
+              <img
+                src="./assests/images/traffic-lights.jpg"
+                alt="portfolio image"
+              />
+            </div>
+            <div class="text-wrapper">
+              <p>
+                <a href="https://traffic-light-ts.vercel.app/" target="_blank"
+                  ><strong>Traffic Light</strong></a
+                >
+              </p>
+              <p>
+                Traffic light condition in react, implemented both class and
+                functional component with typescript
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/carousel.js"></script>
+  </body>
+</html>
